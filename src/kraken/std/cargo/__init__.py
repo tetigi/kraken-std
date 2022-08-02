@@ -15,6 +15,7 @@ from .tasks.cargo_clippy_task import CargoClippyTask
 from .tasks.cargo_fmt_task import CargoFmtTask
 from .tasks.cargo_publish_task import CargoPublishTask
 from .tasks.cargo_sync_config_task import CargoSyncConfigTask
+from .tasks.cargo_test_task import CargoTestTask
 
 __all__ = [
     "cargo_auth_proxy",
@@ -30,11 +31,10 @@ __all__ = [
     "CargoClippyTask",
     "CargoProject",
     "CargoPublishTask",
+    "CargoTestTask",
     "CargoRegistry",
     "CargoSyncConfigTask",
 ]
-
-from .tasks.cargo_test_task import CargoTestTask
 
 CARGO_BUILD_SUPPORT_GROUP_NAME = "cargoBuildSupport"
 CARGO_SYNC_CONFIG_TASK_NAME = "cargoSyncConfig"
