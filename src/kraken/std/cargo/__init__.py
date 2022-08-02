@@ -167,11 +167,11 @@ def cargo_build(
 
 
 def cargo_test(
-        incremental: bool | None = None,
-        env: dict[str, str] | None = None,
-        *,
-        group: str | None = "test",
-        project: Project | None = None,
+    incremental: bool | None = None,
+    env: dict[str, str] | None = None,
+    *,
+    group: str | None = "test",
+    project: Project | None = None,
 ) -> CargoTestTask:
     """Creates a task that runs `cargo test`.
 
